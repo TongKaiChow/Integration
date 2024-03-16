@@ -5,8 +5,18 @@
     <packaging>pom</packaging>
     <modules>
         <module>MQ</module>
+        <module>MQ_2</module>
         <module>Utils</module>
         <module>Config</module>
+        <module>registry-center-eureka</module>
+        <module>registry-center-eureka2</module>
+        <module>Client</module>
+        <module>MQ_Common</module>
+        <module>Redis</module>
+        <module>Redis-Common</module>
+        <module>ES</module>
+        <module>QrtZ</module>
+        <module>Qrtz-Common</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -23,6 +33,11 @@
     <name>Integration</name>
     <description>Integration</description>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.3.12.RELEASE</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -90,15 +105,21 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>3.1.0</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-config -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <version>2.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.2.5.release</version>
+        </dependency>
     </dependencies>
-
-
-    <build>
-        <plugins>
-
-        </plugins>
-    </build>
 
 </project>

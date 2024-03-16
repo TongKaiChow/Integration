@@ -1,6 +1,5 @@
 package com.ztk.mq.properties;
 
-import com.ztk.mq.override.RocketMQBrokerInstance;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.apis.ClientConfiguration;
